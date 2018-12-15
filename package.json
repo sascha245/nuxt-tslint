@@ -1,6 +1,6 @@
 {
   "name": "nuxt-tslint",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Nuxt module for quickly adding tslint to your project",
   "main": "index.js",
   "scripts": {

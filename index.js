@@ -1,12 +1,6 @@
 function TSLintModule(moduleOptions) {
-  const moduleDefaultOptions = {
-    tsconfig: undefined,
-    tslint: undefined
-  };
-
   const options = {
-    ...moduleDefaultOptions,
-    ...this.options.typescript,
+    ...this.options.tslint,
     ...moduleOptions
   };
 
@@ -18,10 +12,7 @@ function TSLintModule(moduleOptions) {
       use: [
         {
           loader: "vue-tslint-loader",
-          options: {
-            configFile: options.tslint,
-            tsConfigFile: options.tsconfig
-          }
+          options
         }
       ]
     });
@@ -32,10 +23,7 @@ function TSLintModule(moduleOptions) {
       use: [
         {
           loader: "tslint-loader",
-          options: {
-            configFile: options.tslint,
-            tsConfigFile: options.tsconfig
-          }
+          options
         }
       ]
     });

@@ -28,22 +28,24 @@ with options
   modules: [
     // ...
     ['nuxt-tslint', {
-        tsconfig: path.join(__dirname, 'tsconfig.custom.json'),
-        tslint: path.join(__dirname, 'tslint.custom.json')
+        configFile: path.join(__dirname, 'tslint.custom.json')
+        tsConfigFile: path.join(__dirname, 'tsconfig.custom.json'),
+        formatter: 'stylish'
     }]
   ]
 }
 ```
 
-or configure it within the typescript object
+or configure it within the tslint object
 
 ```js
 {
   // ...
   modules: ['nuxt-tslint'],
-  typescript: {
-    tsconfig,
-    tslint
+  tslint: {
+    configFile: path.join(__dirname, 'tslint.custom.json')
+    tsConfigFile: path.join(__dirname, 'tsconfig.custom.json'),
+    formatter: 'stylish'
   },
   // ...
 }
@@ -51,10 +53,7 @@ or configure it within the typescript object
 
 ## Options
 
-- `tsconfig: string`
-  - The path for the custom `tsconfig` file
-- `tslint: string`
-  - The path for the custom `tslint` file
+See [tslint-loader](https://github.com/wbuchwalter/tslint-loader) options
 
 ## License
 
