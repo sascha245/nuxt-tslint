@@ -1,0 +1,22 @@
+{
+  "name": "nuxt-tslint",
+  "version": "1.0.0",
+  "description": "Nuxt module for quickly adding tslint to your project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nuxt",
+    "vue",
+    "tslint",
+    "webpack"
+  ],
+  "repository": "https://github.com/sascha245/nuxt-tslint",
+  "author": "Sascha Braun",
+  "license": "MIT",
+  "dependencies": {
+    "tslint-loader": "^3.5.4",
+    "vue-tslint-loader": "^3.5.6"
+  }
+}
