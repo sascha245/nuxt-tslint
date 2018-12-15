@@ -18,5 +18,8 @@
   "dependencies": {
     "tslint-loader": "^3.5.4",
     "vue-tslint-loader": "^3.5.6"
+  },
+  "peerDependencies": {
+    "tslint": "^5.11.0"
   }
 }

@@ -6,6 +6,8 @@ Nuxt module for quickly adding tslint to your project
 
 - Install [nuxt-ts](https://github.com/hmsk/nuxt-ts) or [nuxt-ts-module](https://github.com/chanlito/nuxt-ts-module) to add Typescript to your Nuxt project
 
+- Install `tslint` and setup your `tslint.json`
+
 - Install `nuxt-tslint`
 
 - Add `nuxt-tslint` to the `modules` section on `nuxt.config.js`
